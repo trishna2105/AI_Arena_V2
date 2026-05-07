@@ -85,9 +85,8 @@ def get_score_from_ai(prompt, image_url):
         
     
 # upload to supabase
-url = "https://oyhpuoebrydygxrffidy.supabase.co"
-key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95aHB1b2VicnlkeWd4cmZmaWR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5MzUwODMsImV4cCI6MjA5MDUxMTA4M30.CIm6hIc6HCNN8uV_7TYYM-xd30nzsYovHDp0CYHREXk"
-
+url = "url"
+key = "key_here"
 supabase = create_client(url, key)
 
 #mock_agent execution
@@ -143,7 +142,7 @@ def generate_image_from_huggingface(prompt):
     try:
         API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
         headers = {
-            "Authorization": "Bearer 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"
+            "Authorization": "Bearer key_here"
         }
 
         response = requests.post(
